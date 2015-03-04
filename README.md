@@ -3,7 +3,7 @@
 CAP is and year school project for Android.
 
 It is a team project initiated by 3 schoolmate.
-- 1 grapohist
+- 1 graphist
 - 1 nodejs developer
 - 1 java developer
 
