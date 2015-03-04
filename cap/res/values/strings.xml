@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">cap</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="logoDescription">Logo CAP</string>
+    <string name="loading">Chargement en cours</string>
+    <string name="LoadPicture">Importer une photo</string>
+    <string name="TakePicture">Prendre une photo</string>
+    <string name="login_pseudo">Pseudo</string>
+    <string name="login_password">Mot de passe</string>
+    <string name="login_connect">Me connecter</string>
+    <string name="login_fbconnect">SE CONNECTER AVEC FACEBOOK</string>
+    <string name="login_success_message">Connecter</string>
+    <string name="register_mail">Adresse mail</string>
+    <string name="register_pseudo">Pseudo</string>
+    <string name="register_password">Mot de passe</string>
+    <string name="register_confPassword">Confirmation mot de passe</string>
+    <string name="footer_cathegory">Catégories</string>
+    <string name="footer_play_defi">Relever un défi</string>
+    <string name="footer_add_defi">Proposé un défi</string>
+    <string name="header_user">User</string>
+    <string name="header_search_placeholder">Cap de chercher un défi ?</string>
+    <string name="title_activity_cathegory">Cathegory</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_create_challenge">CreateChallenge</string>
+    <string name="popup_title_rules">Règles d\'utilisations</string>
+    <string name="popup_desc_rules_create">Cher Capnaute…
+        \n\nLe principe de CAP ? est cimple: poster une photo ou une vidéo prouvant ton défi en rapport avec la catégorie et l\'objectif du défi.
+        \n\nChaque défi est controlé par les Capnautes et par notre service de modération avant d\'être visible par toute la communauté.
+        \n\nParticipe au développement de la plateforme et poste ton défi ;-)</string>
+    <string name="title_activity_do_challenge">DoChallenge</string>
+    <string name="title_activity_profil">Profil</string>
+    <string name="title_activity_cathegory_challenge">CathegoryChallenge</string>
+    <string name="title_activity_last_challenge">LastChallenge</string>
+    <string name="title_activity_test">Test</string>
+
+</resources>

@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include_footer_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/include_header_layout"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/pict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blocnote"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:layout_centerHorizontal="true" />
+            
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pict"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/cap_de_proposer_un_defi" />
+
+            <ImageButton
+                android:id="@+id/rules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:onClick="rulesPopup"
+                android:background="@drawable/regle"
+                android:gravity="center_horizontal" />
+
+            <Spinner
+                android:id="@android:id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rules"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/challengeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@android:id/list"
+                android:ems="10"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal" />
+
+ 
+
+            <ImageView
+                android:id="@+id/pictureController"
+                android:layout_width="wrap_content"
+                android:layout_height="200dip"
+                android:layout_below="@+id/challengeName"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/picturesButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/pictureController"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/buttonTakePicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:onClick="createChallengePicture"
+                    android:background="@drawable/prendre_photo" >
+                </Button>
+
+                <Button
+                    android:id="@+id/buttonLoadPicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:onClick="loadChallengePicture"
+                    android:background="@drawable/importer_photo" >
+                </Button>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/buttonChallenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/picturesButton"
+                android:contentDescription="Enregister un challenge"
+                android:onClick="sendChallenge"
+                android:background="@drawable/enregistrer"
+                android:gravity="center"
+                android:layout_marginBottom="20dip"
+                android:layout_centerHorizontal="true"  />
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include_footer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer_view"
+        android:background="#FFFFFF"
+        android:gravity="center|bottom"
+        android:orientation="horizontal" />
+
+    <include
+        android:id="@+id/include_header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/header_view"
+        android:background="#FFFFFF"
+        android:gravity="center|bottom"
+        android:orientation="horizontal" />
+
+</RelativeLayout>
